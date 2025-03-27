@@ -159,3 +159,61 @@
 
 > ✅ 텍스트 파일은 CLI와 GUI 환경 모두에서 쉽게 확인하고 수정할 수 있어요.  
 > 두 환경을 병행하면 학습과 개발 효율이 올라갑니다.
+
+---
+
+# 🧑‍💻 C 프로그램: 학생 정보 입력 및 출력
+
+## 📄 mission.c 코드
+
+```c
+#include <stdio.h>
+
+int main() {
+    char name[50];
+    int studentID;
+
+    printf("학번을 입력하세요: ");
+    scanf("%d", &studentID);
+
+    printf("이름을 입력하세요: ");
+    scanf("%s", name);
+
+    printf("\n=== 학생 정보 ===\n");
+    printf("학번 : %d\n", studentID);
+    printf("이름 : %s\n", name);
+
+    return 0;
+}
+```
+
+---
+## ⚙️ 컴파일 및 실행
+
+```bash
+gcc mission.c     # mission.c 파일을 컴파일하여 a.out 실행 파일 생성
+./a.out           # 생성된 실행 파일 실행
+```
+
+---
+
+## 📌 설명 요약
+
+| 단계             | 설명                                                            |
+|------------------|-----------------------------------------------------------------|
+| `gcc mission.c`  | C 소스 파일을 컴파일하여 실행 파일(`a.out`)을 생성함           |
+| `./a.out`        | 컴파일된 프로그램을 실행함                                     |
+| `scanf()`        | 사용자로부터 입력(학번, 이름)을 받는 함수                       |
+
+
+---
+
+### 🖼️ 실행 결과 이미지 
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/8fc4bc8d-241f-4245-91b2-eee1fad4812b" width="500"><br> 
+  <em>코드 작성 및 실행 화면</em>
+</p>
+
+---
+
